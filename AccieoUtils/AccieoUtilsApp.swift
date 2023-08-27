@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct AccieoUtilsApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        MenuBarExtra("Accieo Utils", systemImage: "terminal") {
+            MenuWindowView()
+        }.menuBarExtraStyle(.window)
     }
 }
