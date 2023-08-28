@@ -5,3 +5,10 @@ Current features:
 2. Caffeinate: Prevents display from sleeping
 
 ![Preview](https://github.com/Accieo/accieo-utils/blob/main/preview.png)
+
+## Build
+Navigate to the root directory and run the following command:
+
+```
+xcodebuild -scheme AccieoUtils build
+```
