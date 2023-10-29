@@ -14,3 +14,6 @@ let shellToggleLight = "osascript -e 'tell app \"System Events\" to tell appeara
 // Caffeinate
 let shellCaffeinate = "caffeinate -id"
 let shellCaffeinateKill = "killall -q caffeinate"
+
+// QuickTime Player
+let screenRecord = "osascript -e 'tell application \"QuickTime Player\" to start (new screen recording)'"

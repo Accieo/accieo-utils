@@ -31,7 +31,7 @@ struct ToggleView: View {
                     Image(systemName: triggerVar ? trueIcon : falseIcon)
                         .frame(width: 25)
                     Text(label)
-                        .frame(width: 75, alignment: .leading)
+                        .frame(width: 100, alignment: .leading)
                 }
             }
             .onChange(of: triggerVar) { value in

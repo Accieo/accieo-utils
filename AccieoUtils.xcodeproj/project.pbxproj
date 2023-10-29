@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		105C06862A9A7BAA005B6564 /* MenuWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105C06852A9A7BAA005B6564 /* MenuWindowView.swift */; };
 		106A9AF92A9BB5D800C28C68 /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A9AF82A9BB5D800C28C68 /* ToggleView.swift */; };
+		1097B0D92AEEF51B002291BF /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097B0D82AEEF51B002291BF /* ItemView.swift */; };
 		10AC01B42A9A27D20002DDCD /* AccieoUtilsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AC01B32A9A27D20002DDCD /* AccieoUtilsApp.swift */; };
 		10AC01B82A9A27D30002DDCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AC01B72A9A27D30002DDCD /* Assets.xcassets */; };
 		10AC01BB2A9A27D30002DDCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AC01BA2A9A27D30002DDCD /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		105C06852A9A7BAA005B6564 /* MenuWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWindowView.swift; sourceTree = "<group>"; };
 		106A9AF82A9BB5D800C28C68 /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		1097B0D82AEEF51B002291BF /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		10AC01B02A9A27D20002DDCD /* AccieoUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccieoUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AC01B32A9A27D20002DDCD /* AccieoUtilsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccieoUtilsApp.swift; sourceTree = "<group>"; };
 		10AC01B72A9A27D30002DDCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			children = (
 				105C06852A9A7BAA005B6564 /* MenuWindowView.swift */,
 				106A9AF82A9BB5D800C28C68 /* ToggleView.swift */,
+				1097B0D82AEEF51B002291BF /* ItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10AC01B42A9A27D20002DDCD /* AccieoUtilsApp.swift in Sources */,
+				1097B0D92AEEF51B002291BF /* ItemView.swift in Sources */,
 				105C06862A9A7BAA005B6564 /* MenuWindowView.swift in Sources */,
 				10AC01C52A9A2BE60002DDCD /* Commands.swift in Sources */,
 				106A9AF92A9BB5D800C28C68 /* ToggleView.swift in Sources */,

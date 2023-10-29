@@ -19,6 +19,8 @@ struct MenuWindowView: View {
 
                 ToggleView("Caffeinate", "cup.and.saucer.fill", "cup.and.saucer", toggleCaffeinate, shellCaffeinate, shellCaffeinateKill)
                 
+                ItemView("Record Screen", "record.circle", screenRecord)
+                
                 Divider()
                 Button("Quit") {
                     NSApplication.shared.terminate(nil)
