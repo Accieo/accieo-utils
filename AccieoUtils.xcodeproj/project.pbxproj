@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100E51732D73570E00DDFBF9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E51722D73570D00DDFBF9 /* SettingsView.swift */; };
 		105C06862A9A7BAA005B6564 /* MenuWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105C06852A9A7BAA005B6564 /* MenuWindowView.swift */; };
 		106A9AF92A9BB5D800C28C68 /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A9AF82A9BB5D800C28C68 /* ToggleView.swift */; };
 		1097B0D92AEEF51B002291BF /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097B0D82AEEF51B002291BF /* ItemView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100E51722D73570D00DDFBF9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		105C06852A9A7BAA005B6564 /* MenuWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWindowView.swift; sourceTree = "<group>"; };
 		106A9AF82A9BB5D800C28C68 /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		1097B0D82AEEF51B002291BF /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		105C06802A9A785A005B6564 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				100E51722D73570D00DDFBF9 /* SettingsView.swift */,
 				105C06852A9A7BAA005B6564 /* MenuWindowView.swift */,
 				106A9AF82A9BB5D800C28C68 /* ToggleView.swift */,
 				1097B0D82AEEF51B002291BF /* ItemView.swift */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100E51732D73570E00DDFBF9 /* SettingsView.swift in Sources */,
 				10AC01B42A9A27D20002DDCD /* AccieoUtilsApp.swift in Sources */,
 				1097B0D92AEEF51B002291BF /* ItemView.swift in Sources */,
 				105C06862A9A7BAA005B6564 /* MenuWindowView.swift in Sources */,

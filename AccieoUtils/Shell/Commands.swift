@@ -12,7 +12,7 @@ let shellToggleDark = "osascript -e 'tell app \"System Events\" to tell appearan
 let shellToggleLight = "osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to false'"
 
 // Caffeinate
-let shellCaffeinate = "caffeinate -id"
+var shellCaffeinate = "caffeinate"
 let shellCaffeinateKill = "killall -q caffeinate"
 
 // QuickTime Player
