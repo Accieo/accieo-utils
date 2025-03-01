@@ -14,3 +14,10 @@ Navigate to the root directory and run the following command:
 ```
 xcodebuild -scheme AccieoUtils build
 ```
+
+## Install
+
+After building, navigate to the binary location which defaults to
+```
+$HOME/Library/Developer/Xcode/DerivedData/AccieoUtils-{id}/Build/Products/Debug/AccieoUtils.app
+```
