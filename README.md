@@ -19,5 +19,5 @@ xcodebuild -scheme AccieoUtils build
 
 After building, navigate to the binary location which defaults to
 ```
-$HOME/Library/Developer/Xcode/DerivedData/AccieoUtils-{id}/Build/Products/Debug/AccieoUtils.app
+$HOME/Library/Developer/Xcode/DerivedData/AccieoUtils*/Build/Products/Debug/AccieoUtils.app
 ```
