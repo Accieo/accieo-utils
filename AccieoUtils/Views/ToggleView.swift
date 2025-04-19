@@ -51,7 +51,7 @@ struct ToggleView: View {
             HStack {
                 (triggerVar ? trueIcon : falseIcon).image
                     .resizable()
-                    .frame(width: 17, height: 17)
+                    .frame(width: 15, height: 15)
                 Text(label)
                     .frame(width: 100, alignment: .leading)
             }

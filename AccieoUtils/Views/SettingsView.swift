@@ -31,6 +31,7 @@ struct SettingsView: View {
                 .padding(.bottom, 5)
 
             Divider()
+
             // Caffeinate settings
             Label {
                 Text("Caffeinate arguments")
@@ -63,11 +64,9 @@ struct SettingsView: View {
                         saveMessage = nil
                     }
                 }
-                .padding(.top, 10)
 
                 if let saveMessage = saveMessage {
                     Text(saveMessage)
-                        .padding(.top, 10)
                         .foregroundStyle(.green)
                         .font(.headline)
                         .transition(.opacity)
@@ -76,7 +75,15 @@ struct SettingsView: View {
                             value: saveMessage
                         )
                 }
-            }
+
+                Spacer()
+                Image("ollama_logo")
+                    .resizable()
+                    .frame(width: 13, height: 13)
+                    .aspectRatio(1, contentMode: .fit)
+                Text("by ollama.com")
+            }.padding(.top, 10)
+
         }
         .frame(width: 400, height: 200)
         .padding()
@@ -88,4 +95,8 @@ struct SettingsView: View {
                 UserDefaults.standard.string(forKey: "caffeinateArgs") ?? "-id"
         }
     }
+}
+
+#Preview {
+    SettingsView()
 }

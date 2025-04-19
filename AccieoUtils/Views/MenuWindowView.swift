@@ -36,6 +36,7 @@ struct MenuWindowView: View {
                     shellCaffeinateKill
                 )
 
+                // Logo by https://ollama.com/ (© 2025 Ollama)
                 ToggleView(
                     "ollama",
                     .asset("ollama_logo"),
@@ -44,6 +45,7 @@ struct MenuWindowView: View {
                     shellOllama,
                     shellKillOllama,
                 )
+                
 
                 ItemView("Record Screen", "record.circle", screenRecord)
 
