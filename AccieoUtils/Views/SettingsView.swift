@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var shellBinaryPath: String = UserDefaults.standard.string(forKey: "shellBinaryPath") ?? "/bin/zsh"
-    @State private var caffeinateArgs: String = UserDefaults.standard.string(forKey: "caffeinateArgs") ?? "-id"
+    @State private var shellBinaryPath: String =
+        UserDefaults.standard.string(forKey: "shellBinaryPath") ?? "/bin/zsh"
+    @State private var caffeinateArgs: String =
+        UserDefaults.standard.string(forKey: "caffeinateArgs") ?? "-id"
     @State private var saveMessage: String?
 
     var body: some View {
@@ -29,6 +31,7 @@ struct SettingsView: View {
                 .padding(.bottom, 5)
 
             Divider()
+
             // Caffeinate settings
             Label {
                 Text("Caffeinate arguments")
@@ -44,34 +47,56 @@ struct SettingsView: View {
                 .padding(.bottom, 5)
 
             Divider()
-            
+
             // Save button
             HStack {
                 Button("Save") {
-                    UserDefaults.standard.set(shellBinaryPath, forKey: "shellBinaryPath")
-                    UserDefaults.standard.set(caffeinateArgs, forKey: "caffeinateArgs")
+                    UserDefaults.standard.set(
+                        shellBinaryPath,
+                        forKey: "shellBinaryPath"
+                    )
+                    UserDefaults.standard.set(
+                        caffeinateArgs,
+                        forKey: "caffeinateArgs"
+                    )
                     saveMessage = "✔︎"
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         saveMessage = nil
                     }
                 }
-                .padding(.top, 10)
-                
+
                 if let saveMessage = saveMessage {
                     Text(saveMessage)
-                        .padding(.top, 10)
                         .foregroundStyle(.green)
                         .font(.headline)
                         .transition(.opacity)
-                        .animation(.easeInOut(duration: 0.5), value: saveMessage)
+                        .animation(
+                            .easeInOut(duration: 0.5),
+                            value: saveMessage
+                        )
                 }
-            }
+
+                Spacer()
+                Image("ollama_logo")
+                    .resizable()
+                    .frame(width: 13, height: 13)
+                    .aspectRatio(1, contentMode: .fit)
+                Text("by ollama.com")
+            }.padding(.top, 10)
+
         }
         .frame(width: 400, height: 200)
         .padding()
         .onAppear {
-            shellBinaryPath = UserDefaults.standard.string(forKey: "shellBinaryPath") ?? "/bin/zsh"
-            caffeinateArgs = UserDefaults.standard.string(forKey: "caffeinateArgs") ?? "-id"
+            shellBinaryPath =
+                UserDefaults.standard.string(forKey: "shellBinaryPath")
+                ?? "/bin/zsh"
+            caffeinateArgs =
+                UserDefaults.standard.string(forKey: "caffeinateArgs") ?? "-id"
         }
     }
+}
+
+#Preview {
+    SettingsView()
 }
